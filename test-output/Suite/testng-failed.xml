@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="org.test.SecurityTesting">
+        <methods>
+          <include name="testSqlInjection"/>
+          <include name="testAuthentication"/>
+        </methods>
+      </class> <!-- org.test.SecurityTesting -->
+      <class name="org.test.UseCaseTest">
+        <methods>
+          <include name="testUserScenario"/>
+        </methods>
+      </class> <!-- org.test.UseCaseTest -->
+      <class name="org.test.FunctionalAPI">
+        <methods>
+          <include name="testCreatePet"/>
+        </methods>
+      </class> <!-- org.test.FunctionalAPI -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

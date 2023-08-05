@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">4</td><td class="num">4,930</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">org.test.FunctionalAPI</td><td><a href="#m0">testCreatePet</a></td><td rowspan="1">1691180766314</td><td rowspan="1">1172</td></tr><tr class="failedodd"><td rowspan="2">org.test.SecurityTesting</td><td><a href="#m1">testAuthentication</a></td><td rowspan="1">1691180769494</td><td rowspan="1">1000</td></tr><tr class="failedodd"><td><a href="#m2">testSqlInjection</a></td><td rowspan="1">1691180770494</td><td rowspan="1">735</td></tr><tr class="failedeven"><td rowspan="1">org.test.UseCaseTest</td><td><a href="#m3">testUserScenario</a></td><td rowspan="1">1691180768229</td><td rowspan="1">1265</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">org.test.FunctionalAPI</td><td><a href="#m4">testGetPetById</a></td><td rowspan="1">1691180767486</td><td rowspan="1">743</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">org.test.FunctionalAPI#testCreatePet</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: POST request failed for /pet expected [200] but found [400]
+	at org.test.FunctionalAPI.testCreatePet(FunctionalAPI.java:46)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">org.test.SecurityTesting#testAuthentication</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Authentication failed for /user/login expected [200] but found [405]
+	at org.test.SecurityTesting.testAuthentication(SecurityTesting.java:40)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">org.test.SecurityTesting#testSqlInjection</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: SQL Injection vulnerability found in /pet/findByStatus
+	at org.test.SecurityTesting.testSqlInjection(SecurityTesting.java:27)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">org.test.UseCaseTest#testUserScenario</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: GET request failed for /pet/0 expected [200] but found [404]
+	at org.test.UseCaseTest.testUserScenario(UseCaseTest.java:45)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">org.test.FunctionalAPI#testGetPetById</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

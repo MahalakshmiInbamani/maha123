@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="4" ignored="0" total="5" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="4930" started-at="2023-08-04T20:26:06Z" finished-at="2023-08-04T20:26:11Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="4930" started-at="2023-08-04T20:26:06Z" finished-at="2023-08-04T20:26:11Z">
+      <class name="org.test.UseCaseTest">
+        <test-method status="FAIL" signature="testUserScenario()[pri:0, instance:org.test.UseCaseTest@77a57272]" name="testUserScenario" duration-ms="1265" started-at="2023-08-04T20:26:08Z" finished-at="2023-08-04T20:26:09Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[GET request failed for /pet/0 expected [200] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: GET request failed for /pet/0 expected [200] but found [404]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.test.UseCaseTest.testUserScenario(UseCaseTest.java:45)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserScenario -->
+      </class> <!-- org.test.UseCaseTest -->
+      <class name="org.test.SecurityTesting">
+        <test-method status="FAIL" signature="testAuthentication()[pri:0, instance:org.test.SecurityTesting@7181ae3f]" name="testAuthentication" duration-ms="1000" started-at="2023-08-04T20:26:09Z" finished-at="2023-08-04T20:26:10Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Authentication failed for /user/login expected [200] but found [405]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Authentication failed for /user/login expected [200] but found [405]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.test.SecurityTesting.testAuthentication(SecurityTesting.java:40)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAuthentication -->
+        <test-method status="FAIL" signature="testSqlInjection()[pri:0, instance:org.test.SecurityTesting@7181ae3f]" name="testSqlInjection" duration-ms="735" started-at="2023-08-04T20:26:10Z" finished-at="2023-08-04T20:26:11Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[SQL Injection vulnerability found in /pet/findByStatus]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: SQL Injection vulnerability found in /pet/findByStatus
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.assertNotEquals(Assert.java:1157)
+at org.test.SecurityTesting.testSqlInjection(SecurityTesting.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSqlInjection -->
+      </class> <!-- org.test.SecurityTesting -->
+      <class name="org.test.FunctionalAPI">
+        <test-method status="FAIL" signature="testCreatePet()[pri:0, instance:org.test.FunctionalAPI@33b37288]" name="testCreatePet" duration-ms="1172" started-at="2023-08-04T20:26:06Z" finished-at="2023-08-04T20:26:07Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[POST request failed for /pet expected [200] but found [400]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: POST request failed for /pet expected [200] but found [400]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.test.FunctionalAPI.testCreatePet(FunctionalAPI.java:46)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreatePet -->
+        <test-method status="PASS" signature="testGetPetById()[pri:0, instance:org.test.FunctionalAPI@33b37288]" name="testGetPetById" duration-ms="743" started-at="2023-08-04T20:26:07Z" finished-at="2023-08-04T20:26:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetPetById -->
+      </class> <!-- org.test.FunctionalAPI -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
